@@ -4,3 +4,8 @@ body {
     background-color: #000000;
     font-family: "Fredoka", sans-serif;
 }
+
+#quienes-somos {
+    color: #ffffff;
+    padding: 2% 10%;
+}

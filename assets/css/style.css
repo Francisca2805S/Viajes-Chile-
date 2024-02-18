@@ -27,3 +27,8 @@ body {
 #icons-footer {
     font-size: 200%;
 }
+
+.footer-principal {
+    color: #ffffff;
+    padding: 3% 15%;
+}

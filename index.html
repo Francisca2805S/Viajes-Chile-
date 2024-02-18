@@ -181,7 +181,8 @@
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
     <div>
-      <button type="button" class="text-light btn btn-info">Enviar</button>
+      <button id="boton-enviar" type="button" class="text-light btn btn-info" data-bs-toggle="tooltip"
+        data-bs-custom-class="custom-tooltip" data-bs-placement="top" data-bs-title="Enviar su mensaje">Enviar</button>
     </div>
   </section>
   <!--FOOTER-->
@@ -194,7 +195,8 @@
       <i class="fa-brands fa-square-facebook"></i>
     </div>
   </footer>
-  
+  <!--SCRIPTS-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
@@ -202,7 +204,17 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/11d38cd228.js" crossorigin="anonymous"></script>
+  <!--TOOLTIP-->
+  <script>
+    $(document).ready(function () {
+      $("button").tooltip();
+    });
 
+    $("#boton-enviar").click(function () {
+      alert("Mensaje Enviado!");
+    });
+
+  </script>
 </body>
 
 </html>
